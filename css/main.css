@@ -208,7 +208,7 @@ padding: 30px 15px;
     z-index: -1;
     box-sizing: border-box;
     margin-top: 5.5%;
-    /* margin-top: 5.5%; */
+  
   }
   
   .home__lower{
@@ -365,7 +365,7 @@ color: rgb(45, 132, 214);
     font-size: 14px;
     line-height: 24px;
     color: #595959;
-    width: 400px;
+    width: 100%;
   }
 .education__block{
     position: relative;
@@ -527,50 +527,516 @@ input[type="submit"] {
 
 
 
-  @media (max-width: 767.99px) {
-      .some__text{
-          padding: 0 20px;
-          font-size: 30px;
-  
-      }
-      .menu__item{
-          justify-content: space-between;
-          margin-right: 30px;
-          font-size: 22px;
-      }
-      .logo__img{
-          width: 37%;
-          height: 95%;
-          margin-left: 30px;
-          margin-right: 15px;
-      }
+  @media (max-width: 950px) {
+    /* Menu settings */  
+    .header{
+        height: 60px;
+        width: 100%;            
+    }
+    .logo{
+        max-width: 70px;
+    }
+    .logo__img{
+        width: 50px;
+        height: 50px;
+        margin: 0 5px;
+    }
+    .menu {
+        font-size: 14px;
+        max-width: 600px;
+    }
+    .menu__item{         
+        margin-right: 10px;
+        padding: 5px;
+    }
+
+    /* Home settings */
+    .home__text{
+        margin: 0 auto;
+        padding-top: 130px;
+        font-size:15px;
+        margin-bottom: 25px;
+        width: 100%;            
+    }
+    .home__text::after{
+        height: 500px;
+        margin: 0;
+        z-index: -100;            
+    }
+    .home__lower{
+        margin-top: 70px;
+    }
+    .home__text h1{
+        font-size: 35px;
+    }
+    .start__btn{
+        height: 30px;
+        font-size: 14px;
+        margin-top: 70px;
+    }
+
+    /* About settings */        
+    .about__block{
+        width: 90%;
+        margin: 0 auto;
+        padding: 15px;            
+    }
+    .about__text{
+        z-index: -100;
+        width: 100%; 
+        padding-top: 100px;        
+    }
+    .about__contacts{
+        padding: 15px ;
+    }
+    .about__contacts p {
+        line-height: 30px;
+    }
+    .about__contacts__container{
+        line-height: 20px;
+        height: 250px;
+        margin-top: 0 auto;
+        width: 600px;
+    }
+    .about__contacts__container img{
+        height: 200px;
+        width: 200px;
+        margin-top: 0;
+    }
+    .about__me__text{
+        width: 600px;
+        text-align: center;
+    }
+    .about__me__text p {
+        line-height: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        max-height: 700px;
+        text-align: left;
+        font-size: 10px;
+    }
+    .title h2{
+        margin: 15px;
+        padding: 5px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* Education settings */
+    .education__group,
+    .portfolio__text{
+        z-index: -100;
+        width: 100%
+    }
+    .education__block{
+        margin: 50px 0 0 20px;
+        padding: 20px;
+        width: 550px;
+        text-align: left;
+        font-size: 12px;
+    }           
+    .education{
+        display: block;
+        width: 100%;            
+    }
+    .education__block span {
+        font-size: 14px;
+    }
+    .education__block p {
+        font-size: 14px;
+    }
+    .education__block h4 {
+        font-size: 16px;
+    }
+
+    /* Portfolio settings */
+    .portfolio__group{
+        display: block;
+        width: 100%;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    .portfolio__container{
+        height: 300px;
+        padding: 5px;
+        margin-left: 23%;
+        margin-top: 30px;
+        width: 500px;
+    }
+    .portfolio__container a{
+        font-size: 14px;                
+    }
+    .portfolio__icon img{
+        height: 50px;
+        width: 50px;
+    }
+
+    /* Contact settings */
+    .contact__container{
+        margin-left:20%;
+    }
+    .group{
+        width: 600px;
+        margin: 10px 20px;
+        padding: 5px;
     }
     
-    @media (max-width: 424.98px) {
-      .menu__item{
-          justify-content: space-between;
-          margin-right: 15px;
-          font-size: 20px;
-      }
-      .some__text{
-          padding: 0 20px;
-          font-size: 20px;
-      }
-      .logo__img{
-          width: 50%;
-          height: 95%;
-          margin-left: 15px;
-          margin-right: 15px;
-      }
-      .item__view__img{
-          width: 40px;
-          height: 40px;
-      }
-      .btn{
-          font-size: 1.2em;
-      }
-      .checkbox__main:checked ~ .popup__list{
-          height: 250px;
-          width: 200px;
-      }
+    .contact__group,
+    .contact__info{
+        width: 500px;
+        margin: 0;
+        padding: 0;
+        margin-left: 5%;
+
     }
+    .info__item {
+        font-size: 12px;
+        height: 100px;
+        margin-left: 100px;
+        margin-top: 10PX;
+    }
+    .info__item img{
+        height: 80px;
+        width: 80px;
+        margin-top: 0;
+    }
+
+
+
+    /* --------------------------------- */
+    .skills__group{
+        margin: auto;
+        padding: 0;
+        width: 160%;
+        text-align: left;
+    }
+    
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        max-height: 700px;
+        text-align: left;
+        font-size: 10px;
+    }
+    .about__contacts__container img{
+        height: 200px;
+        width: 200px;
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead tr {
+        display: none;
+    }
+    tr {
+        margin-bottom: 15px;
+    }
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        margin: 0;
+    }
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 10px);
+        padding-right: 10px;
+        text-align: left;
+        font-weight: bold;   
+    }
+       
+    }
+
+    @media (max-width: 767.99px) {
+        /* Menu settings */  
+        .header{
+            height: 60px;
+            width: 100%;            
+        }
+        .logo{
+            max-width: 70px;
+        }
+        .logo__img{
+            width: 50px;
+            height: 50px;
+            margin: 0 5px;
+        }
+        .menu {
+            font-size: 13px;
+            max-width: 400px;
+        }
+        .menu__item{            
+            margin-right: 10px;
+            padding: 5px;
+        }
+        /* Home settings */
+        .home__text{
+            margin: 0 auto;
+            padding-top: 100px;
+            font-size:15px;
+            margin-bottom: 15px;
+            width: 100%;            
+        }
+        .home__text::after{
+            height: 410px;
+            margin: 0;
+            z-index: -100;            
+        }
+        .home__lower{
+            margin-top: 40px;
+        }
+        .home__text h1{
+            font-size: 25px;
+        }
+        .start__btn{
+            height: 30px;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+
+        /* About settings */        
+        .about__block{
+            width: 90%;
+            margin: 0 auto;
+            padding: 15px;            
+        }
+        .about__text{
+            z-index: -100;
+            width: 100%;         
+        }
+        .about__contacts{
+            padding: 5px ;
+        }
+        .about__contacts p {
+            line-height: 20px;
+        }
+        .about__contacts__container{
+            line-height: 10px;
+            height: 160px;
+            margin-top: 0 auto;
+        }
+        .about__contacts__container img{
+            height: 170px;
+            width: 170px;
+            margin-top: 0;
+        }
+        .about__me__text{
+            width: 400px;
+            text-align: center;
+        }
+        .about__me__text p {
+            line-height: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            max-height: 700px;
+            text-align: left;
+            font-size: 10px;
+        }
+        .title h2{
+            margin: 5px;
+            padding: 5px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        /* Education settings */
+        .education__group,
+        .portfolio__text{
+            z-index: -100;
+            width: 100%
+        }
+        .education__block{
+            margin: 50px 0 0 20px;
+            padding: 10px;
+            width: 350px;
+            text-align: left;
+            font-size: 10px;
+        }           
+        .education{
+            display: block;
+            width: 100%;            
+        }
+        .education__block span {
+            font-size: 12px;
+        }
+        .education__block p {
+            font-size: 12px;
+        }
+        .education__block h4 {
+            font-size: 14px;
+        }
+
+        /* Portfolio settings */
+        .portfolio__group{
+            display: block;
+            width: 100%;
+            font-size: 10px;
+            margin: 0 auto;
+        }
+        .portfolio__container{
+            height: 260px;
+            padding: 5px;
+            margin-left: 5%;
+            margin-top: 30px;
+            width: 400px;
+        }
+        .portfolio__container a{
+            font-size: 14px;                
+        }
+        .portfolio__icon img{
+            height: 40px;
+            width: 40px;
+        }
+
+        /* Contact settings */
+        .contact__container{
+            margin-left: 5px;
+        }
+        .group{
+            width: 350px;
+            margin: 10px 20px;
+            padding: 5px;
+        }
+        
+        .contact__group,
+        .contact__info{
+            width: 400px;
+            margin: 0;
+            padding: 0;
+            margin-left: 5%;
+    
+        }
+        .info__item {
+            font-size: 10px;
+            height: 100px;
+            margin-left: 35px;
+            margin-top: 10PX;
+        }
+        .info__item img{
+            height: 80px;
+            width: 80px;
+            margin-top: 0;
+        }
+
+    }
+    
+
+    @media (max-width: 424.98px) {
+        /* Menu settings */
+        .header{
+            height: 60px;          
+        }
+        .logo{
+            max-width: 60px;
+        }
+        .logo__img{
+            width: 50px;
+            height: 50px;
+            margin: 0 5px;
+        }
+        .menu {
+            font-size: 12px;
+            max-width: 320px;
+          }
+        .menu__item{
+            margin-left: 15px;
+            padding: 5px;
+        }
+
+
+        /* Home settings */
+        .home__text{
+            margin: 0 auto;
+            padding-top: 100px;
+            font-size:12px;
+            margin-bottom: 15px;
+            width: 100%;            
+        }
+        .home__text::after{
+            height: 410px;
+            margin: 0;
+            z-index: -100;      
+          }
+        .home__text h1{
+            font-size: 20px;
+        }
+        .start__btn{
+            height: 30px;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+
+        /* About settings */
+        .about__contacts{
+            padding: 5px ;
+        }
+        .about__contacts p {
+            line-height: 25px;
+        }
+        .about__contacts__container{
+            line-height: 10px;
+            height: 150px;
+            width: 350px;
+        }
+        .about__contacts__container img{
+            height: 120px;
+            width: 120px;
+        }
+        .about__me__text{
+            width: 270px;
+            text-align: center;
+        }
+        table {
+            font-size: 8px;            
+        }
+        
+        /* Education settings */
+        .education__block{
+            width: 330px;
+            font-size: 10px;
+        }
+        .education__block span {
+            font-size: 10px;
+        }
+        .education__block p {
+            font-size: 10px;
+        }
+        .education__block h4 {
+            font-size: 11px;
+        }
+
+
+        /* Portfolio settings */
+        .portfolio__group{
+            margin-left: 0 auto;  
+        }
+        .portfolio__container{
+            height: 260px;
+            padding: 5px;
+            margin-left: 6%;
+            margin-top: 30px;
+            width: 320px;
+        }
+
+        /* Contact settings */
+        .group{
+            width: 300px;
+        }
+        .contact__group,
+        .contact__info{
+            width: 350px;
+            margin-left: 20px;
+    
+        }
+        .info__item img{
+            height: 60px;
+            width: 60px;
+        }
+}
